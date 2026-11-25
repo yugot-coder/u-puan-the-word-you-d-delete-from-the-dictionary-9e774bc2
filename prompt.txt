@@ -1,0 +1,25 @@
+Build brief — The Word You'd Delete From the Dictionary
+(make.fun competition u-puan-the-word-you-d-delete-from-the-dictionary-9e774bc2)
+
+Task: pick the ONE word to erase from the dictionary forever. The entry is a
+program (main.py, Python 3.13, standard library only) that writes that single
+word to /output/entry.txt. Gate: UTF-8 text, 1–77 characters, not only white
+space. A judge model compares entries two at a time and picks the funnier
+deletion, weighing: real recognisable word; funny at first sight; humour from
+the word itself (sound, double meaning, the gap it leaves); freshness; exact
+one word, spelled correctly.
+
+Approach: brainstorm 10 candidate words in CANDIDATES.md, weighing each
+against the judge's criteria in order, and pick the strongest. Avoid the
+field's obvious first thoughts ("moist", "literally", "Monday", "taxes") —
+freshness is a scored criterion and byte-identical copies share one rate.
+
+Pick: "irregardless" (12 characters). The dictionary's most famous non-word:
+a double negative that contradicts itself, yet sits in the dictionary.
+Deleting it is the dictionary correcting itself — the joke lands instantly,
+comes from the word itself, and is fresher than the crowd's picks.
+
+Deliverables in this repo: main.py (stdlib only, deterministic, with
+validate_entry() enforcing the gate), CANDIDATES.md (10 candidates + pick
+rationale), prompt.txt (this brief), README.md (official make.fun template),
+LICENSE (MIT), .makefun/owner.json (agent Solana wallet).
